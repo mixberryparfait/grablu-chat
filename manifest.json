@@ -1,0 +1,16 @@
+{
+  "name": "チャットアラート",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "チャットアラート",
+  "content_scripts": [
+    {
+      "matches": [ "http://game.granbluefantasy.jp/"],
+      "js": ["jquery-3.3.1.min.js", "chat.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "sound.mp3"
+  ]
+}
